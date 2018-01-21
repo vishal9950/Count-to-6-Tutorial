@@ -13,3 +13,7 @@ const arr2 = ['Hello', '123'];
 test('Should work for string and num array: ', () => {
   expect(arrow(arr2)).toBe(`[${arr2}] becomes "H1"`);
 });
+
+test('Should not work for empty args: ', () => {
+  expect(arrow()).toBe(undefined);
+});
