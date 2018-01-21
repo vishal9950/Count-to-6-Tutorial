@@ -7,3 +7,7 @@ test('Should work for no args: ', () => {
 test('Should work for 1 arg: ', () => {
   expect(midpoint(undefined, 2)).toBe(1);
 });
+
+test('Should work for 1 arg(2): ', () => {
+  expect(midpoint(-1, undefined)).toBe(0);
+});
