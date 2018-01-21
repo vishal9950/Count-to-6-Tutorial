@@ -12,3 +12,9 @@ test('Should greet if name is all CAPS: ', () => {
   expect(greet(strings, nameArg, nameArg.toLowerCase())).toBe(`Hello, XYZ!
 Your name lowercased is "xyz"`);
 });
+
+const nameArg1 = 'xYz';
+test('Should greet if name is mixed case: ', () => {
+  expect(greet(strings, nameArg1, nameArg1.toLowerCase())).toBe(`Hello, xYz!
+Your name lowercased is "xyz"`);
+});
