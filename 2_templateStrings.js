@@ -1,4 +1,3 @@
-
 function greet(strings, name, nameLowerCase) {
   if (name === '') {
     console.log('Err1: Empty string supplied!');
