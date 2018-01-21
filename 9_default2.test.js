@@ -15,3 +15,7 @@ test('Should work if both args: ', () => {
 test('Should work for empty string: ', () => {
   expect(makeImportant('', 2)).toBe('!!');
 });
+
+test('Should work for empty string w/o second arg: ', () => {
+  expect(makeImportant('')).toBe('');
+});
