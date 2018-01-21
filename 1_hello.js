@@ -1,5 +1,5 @@
 function fn() {
-	return 'HELLO ES6';
+  return 'HELLO ES6';
 }
 
 console.log(fn());
