@@ -17,4 +17,5 @@ const inputs = process.argv.slice(2);
 
 console.log(arrow(inputs));
 
+
 module.exports = arrow;
