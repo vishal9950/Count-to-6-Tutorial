@@ -3,17 +3,17 @@ function html(string, username, comment) {
     console.log('Err1: insufficient arguments');
     return undefined;
   }
-  let result = comment.replace('&', '&amp;');
-  result = result.replace('"', '&quot;');
-  result = result.replace('<', '&lt;');
-  result = result.replace('>', '&gt;');
-  result = result.replace('\'', '&apos;');
+  let result = comment.replace(/&/g, '&amp;');
+  result = result.replace(/"/g, '&quot;');
+  result = result.replace(/</g, '&lt;');
+  result = result.replace(/>/g, '&gt;');
+  result = result.replace(/'/g, '&apos;');
 
-  let result1 = username.replace('&', '&amp;');
-  result1 = result1.replace('"', '&quot;');
-  result1 = result1.replace('<', '&lt;');
-  result1 = result1.replace('>', '&gt;');
-  result1 = result1.replace('\'', '&apos;');
+  let result1 = username.replace(/&/g, '&amp;');
+  result1 = result1.replace(/"/g, '&quot;');
+  result1 = result1.replace(/</g, '&lt;');
+  result1 = result1.replace(/>/g, '&gt;');
+  result1 = result1.replace(/'/g, '&apos;');
   return `${string[0]}${result1}${string[1]}${result}${string[2]}`;
 }
 
