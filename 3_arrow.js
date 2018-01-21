@@ -1,4 +1,7 @@
 function arrow(inputs) {
+  if (!inputs) {
+    return undefined;
+  }
   if (inputs.length === 0) {
     console.log('Err1: Empty array suppied!');
     return false;
