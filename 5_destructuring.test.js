@@ -21,3 +21,9 @@ const obj3 = { username: 'jdoe', email: '' };
 test('Should work for [1, "jdoe", "", "John", "Doe"]: ', () => {
   expect(destructure(arr3)).toEqual(obj3);
 });
+
+const arr4 = [1, '', '', 'John', 'Doe'];
+const obj4 = { username: '', email: '' };
+test('Should work for [1, "", "", "John", "Doe"]: ', () => {
+  expect(destructure(arr4)).toEqual(obj4);
+});
