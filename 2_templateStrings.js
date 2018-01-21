@@ -11,7 +11,7 @@ function greet(strings, name, nameLowerCase) {
 }
 
 const msg = greet`Hello, ${process.argv[2]}!
-Your name lowercased is "${process.argv[2].toLowerCase()}"`;
+Your name lowercased is "${process.argv[2].toLowerCase()}".`;
 
 console.log(msg);
 
