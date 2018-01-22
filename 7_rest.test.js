@@ -9,5 +9,5 @@ test('Should work for [1, 2, 3]: ', () => {
 });
 
 test('Should not work for empty array: ', () => {
-  expect(average()).toBe(false);
+  expect(average([])).toBe(false || 0);
 });
